@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>80sWordGuessGame</title>
+
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="header"></div>
+    </header>
+    <main class="container">
+        <table class="game-content">
+            <thead>
+                <tr>
+                    <th colspan="2"><span class="bandName">80s bands</span>
+                        <img id="youwin-image" src="assets/images/youwin.jpg" alt="You Win" />
+                        <img id="gameover-image" src="assets/images/gameover.jpg" alt="Game Over" />
+                        <h1 id="tryAgainPressAnyKey">Try Again Press Any Key!</h1>
+                    </th>
+                </tr>
+            </thead>  
+            <tbody>
+                <tr>
+                    <td class="clue"></td>
+                    <td><h3 style="padding-bottom:5px;"><u>Press any Key start!</u></h3>
+                        <h4>Wins:</h4>  <div id="gameWins"></div>
+                        <h4>Current Word:</h4> <div id="currentWord"></div>
+                        <h4>Losses:</h4>  <div id="gameLosses"></div>
+                        <h4 style="padding-top:10px;">Guesses Left:</h4>  <div id="guessesLeft"></div>
+                        <h4>All Guesses:</h4>  <div id="userGuesses"></div>
+                    </td>
+                </tr>
+            </tbody>      
+        </table>
+    </main>    
+    <footer class="footer">
+            <div class="container">
+            </div>
+    </footer>
+    
+    <script type="text/javascript" src="assets/javaScript/game.js"></script>    
+    
+</body>
+</html>
